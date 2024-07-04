@@ -10,4 +10,4 @@ this repo holds a selection of recent auditing projects i've done that can be sh
 
 ### availability
 
-dm me [@0xjoaovpsantos](http://twitter.com/zachobront).
+dm me [@0xjoaovpsantos](https://x.com/0xjoaovpsantos).
