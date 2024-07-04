@@ -33,11 +33,11 @@ The following contracts were in scope:
 
 ## [H-01] `TSwapPool::sellPoolTokens` don't sell the pool tokens correctly
 
-### Summary
+#### Summary
 
 When `TSwapPool::sellPoolTokens` is called, depending on the balance of the user the swap fails.
 
-### Vulnerability Details
+#### Vulnerability Details
 
 Inside the `TSwapPool::sellPoolTokens`, the function `TSwapPool::swapExactOutput` is called, as we can see below:
 
@@ -62,11 +62,11 @@ We need to call `TSwapPool::swapExactInput` instead of `TSwapPool:swapExactOutpu
 
 The user may not sell your pool tokens getting and `ERC20InsufficientBalance` error.
 
-### Tools Used
+#### Tools Used
 
 Solidity and Foundry
 
-### Proof of Concept
+#### Proof of Concept
 
 Add the folloing PoC to `test/unit/TSwapPool.t.sol`:
 
@@ -100,7 +100,7 @@ Add the folloing PoC to `test/unit/TSwapPool.t.sol`:
     }
 ```
 
-## Recommendations
+### Recommendations
 
 You need to call the `TSwapPool:swapExactInput` to make the swap correctly, for example:
 
@@ -131,11 +131,11 @@ function sellPoolTokens(
 
 ## [M-01] `TSwapPool::deposit` function don't verify if deadline is late
 
-## Summary
+### Summary
 
 In the `TSwapPool::deposit` function we don't have a verification if deadline is late.
 
-## Vulnerability Details
+### Vulnerability Details
 
 The function `TSwapPool::deposit` don't verify the deadline parameter, as we can see below:
 
@@ -151,15 +151,15 @@ The function `TSwapPool::deposit` don't verify the deadline parameter, as we can
         returns (uint256 liquidityTokensToMint)
 ```
 
-## Impact
+### Impact
 
 Because of the lack os this check the function `TSwapPool::deposit` will be accept deposits after the deadline
 
-## Tools Used
+### Tools Used
 
 * Solidity and Foundry
 
-## Proof of Concept
+### Proof of Concept
 
 Add the following PoC to `test/unit/TSwapPool.t.sol`:
 
@@ -181,7 +181,7 @@ Add the following PoC to `test/unit/TSwapPool.t.sol`:
     }
 ```
 
-## Recommendations
+### Recommendations
 
 You can use the existent modifier `revertIfDeadlinePassed` in the `TSwapPool::deposit`:
 
@@ -202,11 +202,11 @@ You can use the existent modifier `revertIfDeadlinePassed` in the `TSwapPool::de
 
 ## [L-01] `TSwapPool::swapExactInput` don't return the output amount
 
-## Summary
+### Summary
 
 When `TSwapPool::swapExactInput` is called it's make the swap but don't return the output amount to the user.
 
-## Vulnerability Details
+### Vulnerability Details
 
 When `TSwapPool::swapExactInput` is called we don't have the output amount returned as we can see below:
 
@@ -240,15 +240,15 @@ When `TSwapPool::swapExactInput` is called we don't have the output amount retur
     }
 ```
 
-## Impact
+### Impact
 
 Because of lack this return, we don't have the output amount that user receives when make the swap
 
-## Tools Used
+### Tools Used
 
 Solidity and Foundry
 
-## Proof of Concept
+### Proof of Concept
 
 Add the following PoC to `test/unit/TSwapPool.t.sol`:
 
@@ -282,7 +282,7 @@ Add the following PoC to `test/unit/TSwapPool.t.sol`:
     }
 ```
 
-## Recommendations
+### Recommendations
 
 In the `TSwapPool::swapExactInput` you could:
 
