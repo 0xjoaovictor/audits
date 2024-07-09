@@ -33,11 +33,11 @@ The following contracts were in scope:
 
 ## [H-01] `TSwapPool::sellPoolTokens` don't sell the pool tokens correctly
 
-#### Summary
+### Summary
 
 When `TSwapPool::sellPoolTokens` is called, depending on the balance of the user the swap fails.
 
-#### Vulnerability Details
+### Vulnerability Details
 
 Inside the `TSwapPool::sellPoolTokens`, the function `TSwapPool::swapExactOutput` is called, as we can see below:
 
@@ -66,7 +66,7 @@ The user may not sell your pool tokens getting and `ERC20InsufficientBalance` er
 
 Solidity and Foundry
 
-#### Proof of Concept
+### Proof of Concept
 
 Add the folloing PoC to `test/unit/TSwapPool.t.sol`:
 
