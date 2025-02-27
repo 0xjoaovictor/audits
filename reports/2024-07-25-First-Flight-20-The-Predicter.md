@@ -5,7 +5,7 @@
         <td>
             <h1>First Flight #20: The Predicter</h1>
             <h2>Competitive betting protocol</h2>
-            <p>Prepared by: 0xjoaovpsantos</p>
+            <p>Prepared by: 0xjoaovictor</p>
             <p>Date: July 25 2024</p>
         </td>
     </tr>

@@ -5,7 +5,7 @@
         <td>
             <h1>First Flight #19: Mondrian Wallet v2</h1>
             <h2>zkSync Account Abstraction</h2>
-            <p>Prepared by: 0xjoaovpsantos</p>
+            <p>Prepared by: 0xjoaovictor</p>
             <p>Date: July 11 2024</p>
         </td>
     </tr>

@@ -5,7 +5,7 @@
         <td>
             <h1>First Flight #18: T-Swap</h1>
             <h2>DEXk</h2>
-            <p>Prepared by: 0xjoaovpsantos</p>
+            <p>Prepared by: 0xjoaovictor</p>
             <p>Date: June 27 2024</p>
         </td>
     </tr>
