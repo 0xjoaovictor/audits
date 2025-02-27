@@ -1,8 +1,14 @@
-# 0xjoaovpsantos audit reports
+# 0xjoaovictor audit reports
 
 this repo holds a selection of recent auditing projects i've done that can be shared publicly.
 
-### contest highlights
+### public contest highlights
+
+| protocol | scope | platform | ranking | report |
+| ---- | ---- | --------- | --------- | --------- |
+| [LoopFi - code4rena](https://code4rena.com/audits/2024-07-loopfi) | full protocol | code4rena | 77/88 | [report](reports/2024-07-LoopFi.md) |
+
+### study contest highlights
 
 | protocol | scope | platform | ranking | report |
 | ---- | ---- | --------- | --------- | --------- |
@@ -12,4 +18,4 @@ this repo holds a selection of recent auditing projects i've done that can be sh
 
 ### availability
 
-dm me [@0xjoaovpsantos](https://x.com/0xjoaovpsantos).
+dm me [@0xjoaovictor](https://x.com/0xjoaovictor).
