@@ -6,7 +6,7 @@ this repo holds a selection of recent auditing projects i've done that can be sh
 
 | protocol | scope | platform | ranking | report |
 | ---- | ---- | --------- | --------- | --------- |
-| [LoopFi - code4rena](https://code4rena.com/audits/2024-07-loopfi) | full protocol | code4rena | 77/88 | [report](reports/2024-07-LoopFi.md) |
+| [LoopFi](https://code4rena.com/audits/2024-07-loopfi) | full protocol | code4rena | 77/88 | [report](reports/2024-07-LoopFi.md) |
 
 ### study contest highlights
 
